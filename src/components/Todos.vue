@@ -12,6 +12,7 @@
 		<Todo 
 			:todo = 'todo'
 			v-for = "todo in filteredTodos"
+			:key = "todo.id"
 			@del = "deleteTodo"
 		/>
 		<Tabs
